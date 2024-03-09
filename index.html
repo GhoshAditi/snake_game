@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SNAKE MANIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="score-cont">
+			<p class="score">0</p>
+	</div>
+
+	<div class="canvas-cont">
+		<div class="canvas">
+			<!-- <div class="snake"></div> -->
+			<!-- <div class="fruit"></div> -->
+		</div>
+	</div>
+
+	<div class="menu">
+		<div class="intro-cont">
+			<p>
+				<span>3</span>
+				<span>D</span> 
+				<span>Snake</span>
+			</p>	
+		</div>
+		<div class="btn-cont">
+			<button class="start-btn" onclick="startGame()"><b>START</b></button>
+		</div>
+	</div>
+
+
+
+	<!----------------SELECT LEVEL--------------------->
+
+	<div class="menu-select-cont">
+		<div class="menu-select">
+			<p>Select level</p>
+
+			<div>
+				<button class="easy" onclick="easy()">Easy</button>
+			</div>
+			<div>
+					<button class="medium" onclick="medium()">Medium</buttpn>
+			</div>
+			<div>
+				<button class="hard" onclick="hard()">Hard</button>
+			</div>
+		</div>
+	</div>
+    <div class="center-container"></div>
+    <div id="game-over-screen" style="display: none;">
+        <div class="game-over-container">    
+        <p id="game-over-message"></p>
+        <button class="play-again-btn">Play Again</button>
+    </div>
+    </div>
+</div>
+</body>
+<script src="scriptSnake.js"></script>
+</html>
